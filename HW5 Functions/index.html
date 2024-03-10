@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW5</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ 
+    <div class="container">
+               
+        <div class="form">
+            <div class="form__item">
+              <label for="">CalculateSquare</label>
+              <input type="text" class="form__input input-1">
+            </div>
+            
+            <button onclick="calculateSquare()">Button 1</button>
+            <h2 class="result result-1"></h2>
+          </div>
+        </div>
+
+    </div> 
+
+    <div class="container">
+               
+        <div class="form">
+            <div class="form__item">
+              <label for="">checkEvenOdd</label>
+              <input type="text" class="form__input input-2">
+            </div>
+            
+            <button onclick="checkEvenOdd()">Button 2</button>
+            <h2 class="result result-2"></h2>
+          </div>
+        </div>
+
+    </div>
+  
+  <div class="gallery">
+      <img src="https://cdn1.ozone.ru/s3/multimedia-t/6035580917.jpg"
+      alt=""
+      onclick="zoom()">
+  </div>
+  
+  <form class="kurses">
+    <div class="modul">
+        <h2>Frontend</h2>
+        <select name="" class="product">
+            <option value="8_500">JavaScript</option>
+            <option value="7_102">PHP</option>
+            <option value="5_800">Photoshop</option>
+        </select>
+
+        <input type="text" class="count">
+        <button onclick="getSum()">Add to cart</button>
+
+        <h1 class="sum-result"></h1>
+    </div>
+
+    <div class="modul">
+      <h2>Backend</h2>
+      <select name="" class="product">
+        <option value="8_520">Java</option>
+        <option value="3_050">Piton</option>
+        <option value="1_010">Algorithmes</option>
+      </select>
+
+      <input type="text" class="count">
+      <button onclick="getSum()">Add to cart</button>
+
+      <h1 class="sum-result"></h1>
+    </div>
+
+    <div class="modul">
+      <h2>Design</h2>
+      <select name="" class="product">
+        <option value="5_000">HTML</option>
+        <option value="5_200">Colours</option>
+        <option value="6_800">Typography</option>
+      </select>
+
+      <input type="text" class="count">
+      <button onclick="getSum()">Add to cart</button>
+
+      <h1 class="sum-result"></h1>
+    </div>
+    
+    <button onclick="getAllSum()">Total</button>
+    <h1 class="allSum-result"></h1>
+  </form>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
